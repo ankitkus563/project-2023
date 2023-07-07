@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        .jumbotron {
+            text-align: center;
+            color: white;
+            margin: 50px 0px;
+            padding: 6%;
+            background-repeat: no-repeat;
+
+            background-image: url(images/Nature\ bg\ img.jpg);
+        }
+
+        .content-align {
+
+            text-align: center;
+        }
+
+        .card-deck {
+
+            margin-top: 25px;
+        }
+
+        #footer {
+            color: white;
+            background-color: black;
+            margin-top: 2%;
+            padding: 10%;
+        }
+
+        .app-content {
+
+            display: flex;
+            flex-direction: row-reverse;
+
+        }
+
+        #footer-content {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #footer-link-content {
+
+            display: grid;
+        }
+
+        #footer-link-content a {
+
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-app">About Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#footer">Download</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="Email" placeholder="Email" aria-label="Email">
+                    <input class="form-control me-2" type="password" placeholder="Password" aria-label="Password">
+                    <button class="btn btn-success" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome To MyApp!</h1>
+        <p class="lead">Hi! Hope You are doing good in your life in this app i am going to talk about what you can do if
+            you use this app this app contains lot of features which students going to love.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+    <div class="container content-align" id="about-app">
+
+        <h1>Why Download this App</h1>
+        <p>Here are three headings with their descriptions for your app about learning through an app for students:</p>
+        <img src="images/app image.jpg" width="55px" alt="">
+    </div>
+
+    <div class="container card-deck">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top" src="images/switch_to_android_app.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive Lessons and Engaging Content</h5>
+                        <p class="card-text">Our app offers a wide range of interactive lessons and engaging content
+                            designed to make learning enjoyable for students of all ages. From captivating videos and
+                            animations to interactive quizzes and games, our app ensures that students have an immersive
+                            learning experience</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top" src="images/switch_to_android_app.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalized Learning Paths for Every Student</h5>
+                        <p class="card-text">With our app, students can embark on personalized learning paths tailored
+                            to their individual needs and learning styles. Our intelligent algorithms analyze students'
+                            progress and adapt the content and difficulty level accordingly</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <img class="card-img-top" src="images/switch_to_android_app.webp" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Collaborative Features for Enhanced Learning</h5>
+                        <p class="card-text">Our app goes beyond individual learning by fostering collaboration among
+                            students. Through interactive discussion boards, virtual study groups, and real-time
+                            collaboration tools, students can connect with their peers, share knowledge</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="footer-content">
+            <div id="footer-link-content">
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Privacy Policy</a>
+            </div>
+            <div class="app-content">
+                <div>
+                    <h2>Download App Here!</h2>
+                    <p>Download this App and Start Your learning Journey</p>
+                </div>
+                <img src="images/download app img.png" width="65px" alt="download app image">
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
