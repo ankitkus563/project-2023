@@ -62,8 +62,8 @@
     </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="images/app image.jpg" width="45px" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -74,7 +74,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link " aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about-app">About Us</a>
@@ -92,7 +92,7 @@
             </div>
         </div>
     </nav>
-    <div class="jumbotron">
+    <div class="jumbotron" id="hero">
         <h1 class="display-4">Welcome To MyApp!</h1>
         <p class="lead">Hi! Hope You are doing good in your life in this app i am going to talk about what you can do if
             you use this app this app contains lot of features which students going to love.</p>
